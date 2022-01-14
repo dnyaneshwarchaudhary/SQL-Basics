@@ -1,0 +1,28 @@
+/* 
+Where Statement
+=,<>,<,>,And,Or,Null,Like,NotNull, In	
+*/
+
+SELECT * 
+FROM EmployeeDemographics
+Where Age>30
+
+SELECT * 
+FROM EmployeeDemographics
+Where Age>=30 and Gender = 'Male'
+
+SELECT * 
+FROM EmployeeDemographics
+Where Age>=30 or Gender = 'Male'
+
+SELECT * 
+FROM EmployeeDemographics
+WHERE LastName LIKE 'S%'
+
+SELECT * 
+FROM EmployeeDemographics
+WHERE LastName is Not Null
+
+SELECT * 
+FROM EmployeeDemographics
+WHERE FirstName in('Jim','Michael')	
