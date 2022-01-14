@@ -1,0 +1,23 @@
+/* 
+Select Statement *, Top, Distinct, Count, As, Max, Min, Avg
+*/
+
+
+SELECT *
+FROM EmployeeDemographics
+
+SELECT top 5*
+FROM EmployeeDemographics
+
+SELECT DISTINCT(EmployeeID)
+FROM EmployeeDemographics
+
+SELECT count(LastName) as LastNames
+FROM EmployeeDemographics
+
+SELECT MAX/AVG/MIN(Salary)
+FROM EmployeeSalary
+
+SELECT MAX(Salary) as Maximum
+FROM SQLDatabase.dbo.EmployeeSalary
+(When master)
