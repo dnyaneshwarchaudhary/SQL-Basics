@@ -1,0 +1,11 @@
+
+SELECT Gender, count(gender) as countgender
+FROM EmployeeDemographics
+WHERE Age>31
+group by gender
+ORDER by countgender DESC 
+
+
+SELECT *
+FROM EmployeeDemographics
+order by Age DESC, Gender DESC
